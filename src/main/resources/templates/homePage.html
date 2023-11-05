@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot Thymleaf HomePage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-3">
+  <div class="mb-3">
+    <h2>Search student by name in SpringBoot</h2>
+  </div>
+  <form action="/search" method="get">
+    <div class="mb-3">
+      <label for="Name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Please enter name!">
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+<div class="container mt-3">
+  <table class="table table-hover table-sm">
+    <thead class="table-success">
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>CGPA</td>
+<!--      <td>Date of birth</td>-->
+<!--      <td>Address</td>-->
+<!--      <td>Phone number</td>-->
+<!--      <td>Gender</td>-->
+      <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student:${Students}">
+      <td th:text="${student.id}"></td>
+      <td th:text="${student.name}"></td>
+      <td th:text="${student.cgpa}"></td>
+      <td>
+        <div class="btn-group btn-group-sm">
+<!--          <button type="button" class="btn btn-primary">Add</button>-->
+          <button type="button" class="btn btn-danger">Delete</button>
+<!--          <button type="button" class="btn btn-primary">Update</button>-->
+          <form action="homePage/editForm">
+            <button type="submit" class="btn btn-primary">Update</button>
+          </form>
+        </div>
+<!--        <a href="edit" class="btn btn-primary">Add</a>-->
+<!--        <a href="" class="btn btn-danger">Delete</a>-->
+<!--        <a href="" class="btn btn-primary">Update</a>-->
+      </td>
+    </tr>
+<!--    <tr>-->
+<!--      <td>2</td>-->
+<!--      <td>Nguyễn Thị Mỹ Anh</td>-->
+<!--      <td>05-09-1997</td>-->
+<!--      <td>Quế Sơn Quảng Nam</td>-->
+<!--      <td>0372679000</td>-->
+<!--      <td>Nữ</td>-->
+<!--      <td>-->
+<!--        <div class="btn-group btn-group-sm">-->
+<!--          <button type="button" class="btn btn-primary">Add</button>-->
+<!--          <button type="button" class="btn btn-danger">Delete</button>-->
+<!--          <button type="button" class="btn btn-primary">Update</button>-->
+<!--        </div>-->
+<!--      </td>-->
+<!--    </tr>-->
+    </tbody>
+  </table>
+</div>
+<div class="container mt-3">
+<!--  <button type="button" class="btn btn-danger">Delete</button>-->
+<!--  <button type="button" class="btn btn-primary">Update</button>-->
+  <div class="text-center">
+    <form action="homePage/editForm">
+      <button type="submit" class="btn btn-primary">Add student</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

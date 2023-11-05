@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymleaf with SpringBoot</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<!--    <h1>Hello SpringBoot</h1>-->
+<!--    <a href="/about">About</a>-->
+
+<!--    <form method="get" action="/hello">-->
+<!--        <input type="input" name="name">-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<div class="container p-5 my-5 bg-primary text-white">
+    <h1>This is first part on the journey to study Thymleaf</h1>
+    <p>Never give up your dream and be lazy. One day you will achieve your desire if you work hard or else you will
+        pay price for your laziness</p>
+</div>
+
+<!-- <div class="row">
+        <div class="col-sm-4 bg-primary text-white">
+            <strong>ID</strong>
+        </div>
+        <div class="col-sm-4  bg-white text-dark">
+            <strong>NAME</strong>
+        </div>
+        <div class="col-sm-4  bg-primary text-white">
+            <strong>GMAIL</strong>
+        </div>
+    </div> -->
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-4 bg-primary text-white">
+            <strong class="display-5">ID</strong>
+        </div>
+        <div class="col-sm-4  bg-white text-dark">
+            <strong class="display-5">NAME</strong>
+        </div>
+        <div class="col-sm-4  bg-primary text-white">
+            <strong class="display-5">GMAIL</strong>
+        </div>
+    </div>
+    <p>This is use <mark>Mark</mark> to highlights</p>
+    <dl>
+        <dt>Drink</dt>
+        <dl>- Coffee</dl>
+        <dl>- Milk tea</dl>
+        <dt>Food</dt>
+        <dl>Hambuger</dl>
+        <dl>Pizza</dl>
+        <dt>Service</dt>
+        <dl>- Massage</dl>
+        <dl>- Mediatation</dl>
+    </dl>
+    <p>You should learn thoroughly and focus on <code>Ensucaplation</code>, <code>Inheritance</code>,
+        <code>Ponolynism</code>
+        , and <code>Abstraction</code> when you expose to OOP <mark>Object Oriented Programming</mark>
+    </p>
+    <p>Use <kbd>Crtl + Alt F4</kbd> when you want to exit the programming</p>
+    <p>This chapter will teach you how to config in SpringBoot: </p>
+    <pre>First you have to download JDK, Maven and install them</pre>
+</div>
+
+<div class="container mt-3">
+    <h2>This part is about table in Boostrap</h2>
+    <p>Let me teach you</p>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gmail</th>
+            <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hoàng Nguyễn</td>
+            <td>Buôn Ma Thuột city</td>
+            <td>hoanghonghach16@gmail.com</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>An Nhiên</td>
+            <td>Quế Sơn Quảng Nam</td>
+            <td>Anh05091997@gmail.com</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Huy Thanh Nguyễn</td>
+            <td>Thành phố Hồ Chí Minh</td>
+            <td>huythanhnguyen96@gmail.com</td>
+            <td>Male</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
