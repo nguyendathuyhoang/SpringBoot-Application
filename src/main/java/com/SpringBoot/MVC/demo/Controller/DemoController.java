@@ -1,15 +1,12 @@
 package com.SpringBoot.MVC.demo.Controller;
 
-import com.SpringBoot.MVC.demo.Model.Student;
+import com.SpringBoot.MVC.demo.DTO.Student;
 import com.SpringBoot.MVC.demo.Repository.DemoRepository;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.StreamSupport;
 
 @RestController
 //@RequestMapping("/api")

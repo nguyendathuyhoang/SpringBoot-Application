@@ -1,4 +1,4 @@
-package com.SpringBoot.MVC.demo.Model;
+package com.SpringBoot.MVC.demo.DTO;
 
 public class Student {
     private int id;

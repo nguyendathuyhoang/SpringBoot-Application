@@ -1,6 +1,6 @@
 package com.SpringBoot.MVC.demo.Controller;
 
-import com.SpringBoot.MVC.demo.Model.Student;
+import com.SpringBoot.MVC.demo.DTO.Student;
 import com.SpringBoot.MVC.demo.Repository.DemoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;

@@ -1,11 +1,8 @@
 package com.SpringBoot.MVC.demo.Repository;
 
-import com.SpringBoot.MVC.demo.Model.Student;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.SpringBoot.MVC.demo.DTO.Student;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.PathVariable;
 
-import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
